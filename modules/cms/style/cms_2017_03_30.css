@@ -1,0 +1,153 @@
+.general_content_boxes .dboard_block1 {
+    border: 1px solid #cbcbcb;
+    float: left;
+    margin: 5px 30px 30px 0px;
+    width: 45%;
+    padding:5px;
+	height:400px;
+
+}
+
+.general_content_boxes .dboard_block2 {
+    border: 1px solid #cbcbcb;
+    float: left;
+    margin: 5px 30px 30px 0px;
+    width: 92%;
+    padding:5px;
+	height:400px;
+
+}
+.goto{
+    width:15px;
+
+
+
+}
+.goto.is-padded {
+
+    padding: 3px 10px  5px 10px;
+    margin: 3px 10px  5px 10px;
+
+}
+.is-padded{
+    padding: 10px;
+}
+.pagination{ margin-top: 0px;
+}
+.have-margin{
+    margin: 0px 0px ;
+}
+.have-padding{
+    padding: 0px 10px 0px 0px;
+}
+.section_list_view.have-padding{
+    margin: 0px 10px 0px 0px;
+}
+.pagination{
+    height:30px;
+}
+.pagination ul > li > a, .pagination ul > li > span{
+    line-height: 30px;
+}
+.pagination li  a.current {
+    color: red;
+
+}
+
+.nav-header{
+background: #CCD0D8 !important;
+color:#777!important;
+}
+.cms .controls .error{
+ padding-left:5px;
+}
+.jhistoryBack{
+    cursor: pointer;
+}
+form.required {
+    font-weight: bold;
+}
+form required label:after {
+    color: #e32;
+    content: '*';
+    display:inline;
+}
+.listingTableHeadTh{
+    color:#0088CC;
+
+}
+.have-margin10{
+    margin: 0px 10px 0px 0px;
+}
+.searchBtn{
+    border-radius:3px 3px 3px 3px !important;
+    padding: 4px 20px 5px 20px;
+}
+.framework_logo{
+    padding:20px 0px 20px 0px;
+}
+.sitehome{
+     padding:0px 0px;
+}
+.header{
+    padding:0px 0px;
+}
+.mandatory{
+	 color: #DB3D0D;
+    font-family: 'Trebuchet MS';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 20px;
+	padding:0 0 0 5px!important;}
+.graph_hdr{
+	color: #0088CC;
+}
+.graph_hdr2{
+	color: #0088CC;
+border-bottom:1px solid #cfcfcf;
+padding:7px;
+}
+.dboard_block1 legend{
+	color: #0088CC;
+	font-size:14px;}
+.dboard_block2 legend{
+	color: #0088CC;
+	font-size:14px;}
+.help-icon{
+   
+    height: 16px;
+    width: 16px;
+    margin-left:8px;
+}
+.legend {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 27px;
+    font-size: 19.5px;
+    line-height: 36px;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #E5E5E5;
+}
+.wordWrap{
+    word-wrap:break-word;
+}
+.table-header a{
+    color: black;
+}
+.table-header a:hover{
+    color: black;
+}
+#popup {
+	width: 850px; /* SET THE WIDTH OF THE MODAL */
+	margin: -250px 0 0 -450px; /* CHANGE MARGINS TO ACCOMODATE THE NEW WIDTH (original = margin: -250px 0 0 -280px;) */
+}
+
+ .boxborder{border:#CCC 1px solid;
+ margin-top:  5px;
+ padding-top:  5px;}
+ .cmslogo {
+margin-left: 100px;
+margin-right: 160px;
+}

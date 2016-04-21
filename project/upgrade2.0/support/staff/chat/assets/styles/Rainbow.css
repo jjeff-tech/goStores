@@ -1,0 +1,492 @@
+Application{
+	backgroundColor:#f9f6d9;
+	borderSkin:ClassReference( 'com.asfusion.skins.BoxModel' );
+	backgroundRepeat:repeat-x;
+	background-image:Embed(source='assets/images/main_bg.png');
+	color: #ffffff;
+	fontSharpness:100;
+	fontFamily: "Verdana";
+	fontThickness:-120;
+	themeColor:#d5610d;
+	fontSize: 10.5;
+}
+Accordion{
+	backgroundColor: #676553;
+	headerStyleName:h3;
+	fillAlphas:1.0,1.0;
+	fillColors:#f9f6d9, #efde9a;
+}
+TabNavigator{
+	/*backgroundColor: #676553;*/
+	color:#2b2a25;
+	backgroundColor: #c4c2ad;
+	tabStyleName:h3;
+	cornerRadius:1;
+	fillAlphas:1.0,1.0;
+	fillColors:#f9f6d9, #efde9a;
+	tabStyleName: tabs;
+	selectedTabTextStyleName: selectedTab;
+	horizontalGap: 1;
+	tabHeight: 35;
+	fontSize:12;
+}
+Alert{
+	color:#2b2a25;
+	backgroundColor: #c4c2ad;
+}
+.tabs{
+	fontThickness:50;
+	cornerRadius:8;
+	color:#ffffff;
+	fontFamily: "Verdana";
+	fontSize:17;
+	fontSharpness:30;
+	highlightAlphas: 0, 0;
+	fillAlphas: 1, 1;
+	fillColors: #939075, #a8a58b;
+	themeColor: #c4c2ad;
+	borderColor: #a8a58b;
+}
+.selectedTab{
+	color:#2b2a25;
+}
+RichTextEditor{
+	borderStyle:"none";
+	headerHeight: 0;
+	borderThicknessLeft:0;
+	borderThicknessRight:0;
+	backgroundColor: #676553;
+	bottom:30;
+	top:90;
+	color:#2b2a25;
+} 
+Label{
+	fontWeight:bold;	
+}
+Text{
+	fontWeight:normal;	
+}
+Panel {
+   borderStyle: solid;
+   borderColor: #d5610d;
+   borderAlpha: 1;
+   roundedBottomCorners: true;
+   cornerRadius: 10;
+   headerHeight: 20;
+   backgroundAlpha: 1;
+   highlightAlphas: 0.44, 0.08;
+   headerColors: #d5610d, #d5610d;
+   backgroundColor: #73715c;
+   dropShadowEnabled: true;
+   shadowDistance: 0;
+   shadowDirection: right;
+   titleStyleName: "panelTitle";
+   titleBackgroundSkin:Embed(source='assets/images/panelHeader.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=30,scaleGridBottom=31);
+}
+/* Panel titleStyleName*/
+.panelTitle {
+   color: #000000;
+   fontSize: 15;
+   fontFamily: "Arial";
+   fontWeight: bold;
+}
+
+ComboBox{
+	upSkin:Embed(source='assets/images/dropDown.png', scaleGridLeft=12, scaleGridRight=87, scaleGridTop=16,scaleGridBottom=17);
+	downSkin:Embed(source='assets/images/dropDown_over.png', scaleGridLeft=12, scaleGridRight=87, scaleGridTop=16,scaleGridBottom=17);
+	overSkin:Embed(source='assets/images/dropDown_over.png', scaleGridLeft=12, scaleGridRight=87, scaleGridTop=16,scaleGridBottom=17);
+	color:#000000;
+	fontSize:13;
+}
+TextInput{
+	borderSkin:Embed(source='assets/images/textInput.png', scaleGridLeft=12, scaleGridRight=115, scaleGridTop=12,scaleGridBottom=13);
+	cornerRadius:5;
+	focusAlpha:0.3;
+	textIndent:5;
+	fontSize:12;
+	fontFamily:Verdana;
+	themeColor:#eac56c;
+}
+Button{
+	upSkin:Embed(source='assets/images/button_up.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=13,scaleGridBottom=14);
+	downSkin:Embed(source='assets/images/button_over.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=13,scaleGridBottom=14);
+	overSkin:Embed(source='assets/images/button_over.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=13,scaleGridBottom=14);
+	selectedUpSkin:Embed(source='assets/images/button_over.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=13,scaleGridBottom=14);
+	selectedOverSkin:Embed(source='assets/images/button_over.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=13,scaleGridBottom=14);
+	disabledSkin:Embed(source='assets/images/button_disabled.png',  scaleGridLeft=12, scaleGridRight=13, scaleGridTop=13,scaleGridBottom=14);
+	color:#000000;
+	disabledColor: #73715c;
+	textRollOverColor:#474638;
+}
+
+TileList{
+	backgroundColor: #73715c;
+	themeColor: #73715c;
+	borderStyle:none;
+	left:5;
+	right:0;
+	verticalScrollBarStyleName:scroll;
+	top:0;
+	bottom:262;
+	columnWidth:142;
+	rowHeight:122;
+	rollOverColor:#918e72;
+	selectionColor:#545345;
+}
+DataGrid{
+	top:0;
+	bottom:300;
+	themeColor: #73715c;
+	alternatingItemColors:#545345, #605f4f;
+	verticalScrollBarStyleName: scroll;
+	headerColors: #dddcd1, #bfbdac;
+	headerStyleName:headerGrid;
+}
+ScrollBar{
+	trackSkin:Embed(source='assets/images/scrollTrack.png');
+	thumbUpSkin: Embed(source='assets/images/thumb.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=4,scaleGridBottom=174);
+	thumbOverSkin:Embed(source='assets/images/thumbOver.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=4,scaleGridBottom=174);
+	thumbDownSkin:Embed(source='assets/images/thumbOver.png', scaleGridLeft=12, scaleGridRight=13, scaleGridTop=4,scaleGridBottom=174);
+	upArrowUpSkin:Embed(source='assets/images/upArrowUp.png');
+	upArrowDownSkin:Embed(source='assets/images/upArrowOver.png');
+	upArrowOverSkin:Embed(source='assets/images/upArrowOver.png');
+	downArrowUpSkin:Embed(source='assets/images/downArrowUp.png');
+	downArrowDownSkin:Embed(source='assets/images/downArrowOver.png');
+	downArrowOverSkin:Embed(source='assets/images/downArrowOver.png'); 
+}
+/****************************************************************************************************************
+                                           CUSTOM COMPONENTS                                                    *
+*****************************************************************************************************************
+*/
+SuperImage{
+	 borderColor:#ffffff;
+	 borderStyle:solid;
+	 dropShadowEnabled:true;
+	 borderThickness:5;
+}
+Rating{
+	left:69;
+	top:52;
+}
+/****************************************************************************************************************
+                                             VIEWS                                                              *
+*****************************************************************************************************************
+*/
+/* ----------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- MainUI    --------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+MainUI{
+	borderSkin:ClassReference( 'com.asfusion.skins.BoxModel' );
+	backgroundRepeat:no-repeat;
+	background-image:Embed(source='assets/images/rainbow.png');
+}
+/* ----------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Header    --------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+Header{
+	fontFamily: "Handwriting - Dakota";
+}
+.navigation{
+	top:45;
+	fontSize:18;
+	fontWeight:normal;
+	layout:"horizontal";
+	horizontalGap:-15;
+	right:10;
+	fontThickness:0;
+}
+.galleryLink{
+	upSkin:Embed(source='assets/images/butterfly.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	overSkin:Embed(source='assets/images/butterfly.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	downSkin:Embed(source='assets/images/butterfly.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	textRollOverColor:#ffffff;
+	textSelectedColor:#dddddd;
+	paddingRight:15;
+	paddingTop:16;
+	paddingBottom:-5;
+	color:#a5a287;
+}
+.participateLink{
+	upSkin:Embed(source='assets/images/butterfly2.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	overSkin:Embed(source='assets/images/butterfly2.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	downSkin:Embed(source='assets/images/butterfly2.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	textRollOverColor:#ffffff;
+	textSelectedColor:#dddddd;
+	paddingRight:15;
+	paddingTop:16;
+	paddingBottom:-5;
+	color:#a5a287;
+}
+.aboutLink{
+	upSkin:Embed(source='assets/images/butterfly3.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	overSkin:Embed(source='assets/images/butterfly3.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	downSkin:Embed(source='assets/images/butterfly3.png', scaleGridLeft=1, scaleGridRight=2, scaleGridTop=25,scaleGridBottom=26);
+	textRollOverColor:#ffffff;
+	textSelectedColor:#dddddd;
+	paddingRight:15;
+	paddingTop:16;
+	paddingBottom:-5;
+	color:#a5a287;
+}
+.mainTitle{
+	left:190;
+	top:0;
+   fontSize: 45;
+}
+.tagLine{
+	fontSize: 20;
+	left:450;
+	top:25;
+}
+/* ----------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Content    --------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+Content{
+	top:89;
+}
+.wrapper{
+	horizontalCenter:0;
+	top:50;
+	width:590;
+	height:600;
+}
+.mainWindow{
+	borderThicknessLeft: 0;
+   borderThicknessTop: 1;
+   borderThicknessRight: 0;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Gallery    --------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+Gallery{
+	borderSkin:ClassReference( 'com.asfusion.skins.BoxModel' );
+	background-image:Embed(source='assets/images/panelPattern.gif');
+	backgroundRepeat:repeat-x;
+	backgroundImageTop:281;
+}
+.h3{
+	fontSize:12;
+}
+.headerGrid{
+	color:#716f5b;
+	fontWeight:bold;
+}
+.thumbnailImage {
+	
+	 verticalCenter:0; 
+	 horizontalCenter:0;
+}
+.bigImage{
+	top:320;
+	left:10;
+}
+.designInfo{
+	right:7;
+	bottom:20;	
+	left:390;
+}
+.designInfoLabelName, .designInfoLabelAuthor, .designInfoLabelRating{
+	paddingTop:0;
+	fontSize:12;
+	fontWeight:bold;
+}
+.designInfoName, .designInfoAuthor{
+	fontSize:13;
+	left:67;
+}
+.designInfoRating{
+	left:160;
+	fontSize:13;
+}
+.designInfoBtnApply{
+	right:0;
+}
+/* ----------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Overlay    ---------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+.viewButtonBar{
+	right:10;
+	buttonWidth:33;
+	fontSize:1;
+	textIndent:32;
+	lastButtonStyleName:gridButton;
+	firstButtonStyleName:thumbnailsButton;
+	buttonHeight:25;
+	top:14;
+}
+.gridButton{
+	upSkin:Embed(source='assets/images/gridUp.png');
+	overSkin:Embed(source='assets/images/gridOver.png');
+	downSkin:Embed(source='assets/images/gridOver.png');
+	selectedUpSkin:Embed(source='assets/images/gridSelected.png');
+	selectedOverSkin:Embed(source='assets/images/gridSelected.png');
+}
+.thumbnailsButton{
+	upSkin:Embed(source='assets/images/thumbnailsUp.png');
+	overSkin:Embed(source='assets/images/thumbnailsOver.png');
+	downSkin:Embed(source='assets/images/thumbnailsOver.png');
+	selectedUpSkin:Embed(source='assets/images/thumbnailsSelected.png');
+	selectedOverSkin:Embed(source='assets/images/thumbnailsSelected.png');
+}
+
+.filterAndSort{
+	fontFamily: "Handwriting - Dakota";
+	top:300;
+	bottom:240;
+	right:16;
+	left:0;
+	borderSkin:ClassReference( 'com.asfusion.skins.BoxModel' );
+	background-image:Embed(source='assets/images/filterSort_bg.png');
+	backgroundRepeat:repeat-x;
+}
+
+.filterLabel{
+	top:5;
+	fontSize:18;
+}
+.filterInput{
+	top:8;
+	left:70;
+	right:300;
+}
+.filterInputGrid{
+	left:70;
+	right:20;
+}
+.sortLabel{
+	top:5;
+	fontSize:18;
+	left:300;
+}
+.sortComboBox{
+	top:8;
+	right:20;
+	left:350;
+	fontFamily:Verdana;
+	fontSize:12;
+	paddingTop:2;
+	paddingBottom:0;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- Participate    ----------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+Participate{
+	paddingTop:8;
+	paddingLeft:8;
+	paddingBottom:8;
+	paddingRight:8;
+}
+
+/* ..................................Accordion page 'Your Information'..............................................*/
+.yourInfoEmailInput{
+	top:120;
+}
+.yourInfoEmailLabel{
+	top:100;
+}
+.yourInfoCountryLabel{
+	top:145;
+}
+.yourInfoCountryInput{
+	top:165;
+}
+.yourInfoNameLabel, .yourInfoWebsiteLabel, .yourInfoCountryLabel, .yourInfoEmailLabel, .yourInfoCountryInput{
+	left:40;
+}
+.yourInfoNameInput, .yourInfoWebsiteInput, .yourInfoEmailInput{
+	left:40;
+	right:100;
+}
+
+/* ..................................Accordion page 'About Your Design'..............................................*/
+
+.aboutDesignDescriptionInfo{
+	bottom:10;
+}
+
+/* ..................................Accordion page 'Your Design Files'..............................................*/
+
+.designFilesSourceText{
+	top:95;
+}
+
+
+.designFilesThumLargeLabel, .designFilesThumLargeButton{
+	left:300;
+}
+.designFilesThumLargeInfoLabel{
+	left:375;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------
+ ---------------------------------------------- About   -----------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------*/
+About{
+	paddingTop:8;
+	paddingLeft:8;
+	paddingBottom:8;
+	paddingRight:8;
+	borderSkin:ClassReference( 'com.asfusion.skins.BoxModel' );
+	background-image:Embed(source='assets/images/panelPatternClean.gif');
+	backgroundRepeat:repeat-x;
+	backgroundImageTop:12;
+	backgroundImageLeft:238;
+	backgroundImageRight:10;
+}
+
+/****************************************************************************************************************
+                                         CSS Animate Properties                                                 *
+*****************************************************************************************************************
+*/
+
+.overlayThumbnailsA{
+	target:filterAndSort;
+	isStyle:true;
+	property:"right";
+	toValue:16;
+	duration:5;
+}
+.overlayGridA{
+	target:filterAndSort;
+	isStyle:true;
+	property:"right";
+	toValue:0;
+	duration:5;
+}
+
+.overlayThumbnailsB{
+	target:filterInput;
+	property:"right";
+	toValue:300;
+	duration:5;
+	isStyle:true;
+}
+.overlayGridB{
+	target:filterInput;
+	property:"right";
+	toValue:20;
+	duration:5;
+	isStyle:true;
+}
+
+/****************************************************************************************************************
+                                             FONTS                                                              *
+*****************************************************************************************************************
+*/
+@font-face {
+   src:url("assets/fonts/dakota.swf");
+   fontFamily: "Handwriting - Dakota";
+}
+@font-face {
+   src:url("assets/fonts/dakota.swf");
+   fontFamily: "Handwriting - Dakota";
+   fontWeight:bold;
+}
+
+
+@font-face {
+    fontFamily:"Verdana";
+    src: url("assets/fonts/verdana.TTF"); /* Embed from file */
+}

@@ -1,0 +1,86 @@
+@CHARSET "ISO-8859-1";
+
+/* Common Styles shoudl go to fw.css */
+
+ul {  list-style-type: none;padding:3px 10px;	}
+li {  list-style-type: none;	}
+li {   padding: 3px 0px;		}
+
+body {
+  	margin: 0;
+  	padding: 0;
+  	font-family: Verdana,Arial,sans-serif;
+  	font-size: 11px;
+}
+
+
+a {
+ 	text-decoration: none;
+}
+
+.hidden {
+  	display: none;
+}
+
+.m-hidden {
+  	display: none;
+}
+
+.clear {
+  	clear: both;
+}
+
+.lfloat{
+	float:left;
+}
+
+.rfloat{
+	float:right;	
+}
+
+.lpadding{
+	padding-left:10px;	
+}
+
+.tpadding{
+	padding-top:10px;	
+}
+
+/* End of Common Styles */
+
+
+.cms {
+ 	min-width :800px;	
+}
+
+.cms .header{
+	border-bottom:1px solid #999999;	
+}
+
+.cms .header .cms_title{
+	float:left;
+	font-weight:bold;
+	font-size:14px;
+	color:#666;	
+}
+	
+.cms .contents .left-panel{
+	width:235px;
+	height:100%;
+	background:#efefef;
+	border-right:1px solid #999999;
+}
+
+.cms .left-panel .group_name{
+	color: #333;
+	font-weight:bold;
+}
+
+.cms a{
+	color: #333;
+	text-decoration:underline;
+}
+#cms_desc___Frame {
+    margin-left: 20px!important;
+}
+

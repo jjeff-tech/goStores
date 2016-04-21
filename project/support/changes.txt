@@ -1,0 +1,18 @@
+/******************** 23/09/2013 ********************/
+
+CREATE TABLE `sptbl_ticket_statistics` (
+	`statistics_id` INT(10) NOT NULL AUTO_INCREMENT,
+	`ticket_id` INT(10) NULL,
+	`reply_time` FLOAT NULL,
+	`closing_time` FLOAT NULL,
+	`posted_date` DATETIME NULL,
+	PRIMARY KEY (`statistics_id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=MyISAM;
+
+ALTER TABLE `sptbl_ticket_statistics`
+	CHANGE COLUMN `reply_time` `reply_time` FLOAT NULL DEFAULT '0' AFTER `ticket_id`,
+	CHANGE COLUMN `closing_time` `closing_time` FLOAT NULL DEFAULT '0' AFTER `reply_time`;
+
+/******************** 23/09/2013 ********************/

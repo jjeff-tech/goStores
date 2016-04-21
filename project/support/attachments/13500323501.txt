@@ -1,0 +1,30 @@
+
+
+CREATE TABLE IF NOT EXISTS `mc_grades` (
+  `grade_id` int(11) NOT NULL auto_increment,
+  `grade_name` varchar(255) NOT NULL,
+  `vStatus` enum('Y','N') NOT NULL default 'Y',
+  `grade` enum('pre','middle','elementary','high') NOT NULL COMMENT 'Pre=>Pre School, Middle => Middle School , Elementary => Elementary School , High => High School',
+  PRIMARY KEY  (`grade_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Dumping data for table `mc_grades`
+--
+
+INSERT INTO `mc_grades` (`grade_id`, `grade_name`, `vStatus`, `grade`) VALUES
+(1, 'pre-K', 'Y', 'pre'),
+(2, 'Kindergarden', 'Y', 'pre'),
+(3, '1st Grade', 'Y', 'elementary'),
+(4, '2nd Grade', 'Y', 'elementary'),
+(5, '3rd Grade', 'Y', 'elementary'),
+(6, '4th Grade', 'Y', 'elementary'),
+(7, '5th Grade', 'Y', 'elementary'),
+(8, '6th Grade', 'Y', 'middle'),
+(9, '7th Grade', 'Y', 'middle'),
+(10, '8th Grade', 'Y', 'middle'),
+(11, '9th Grade', 'Y', 'high'),
+(12, '10th Grade', 'Y', 'high'),
+(13, '11th Grade', 'Y', 'high'),
+(14, '12th Grade', 'Y', 'high');
+

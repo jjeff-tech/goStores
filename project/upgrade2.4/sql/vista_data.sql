@@ -1,0 +1,1 @@
+INSERT INTO `goStores_Vista_settings` VALUES ('secureURL', '');

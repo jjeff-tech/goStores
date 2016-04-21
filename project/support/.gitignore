@@ -1,0 +1,8 @@
+*.db
+
+
+/config/settings.php
+/nbproject/private/private.properties
+/nbproject/project.properties
+/nbproject/project.xml
+/nbproject/private/

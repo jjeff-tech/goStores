@@ -1,0 +1,21 @@
+$var_refname
+
+time().
+
+$_POST['txtRef'];
+
+$var_refname= time().$_POST['txtRef'];
+
+<?php
+                                                                                                                $var_refname = time(). rand(1,90000);
+                                                                                                                ?>
+
+pizza
+
+txtcartcountid
+
+onclick="return checkCartcount();"
+
+product_id
+
+product_option_id

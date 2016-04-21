@@ -1,0 +1,14 @@
+<?php
+define('HEADER_KB','base de connaissances');
+define('TEXT_KB','base de connaissances');
+define('TEXT_GO','aller');
+define('TEXT_TITLE','Titre');
+define('TEXT_SEARCH','Rechercher');
+define('TEXT_SEARCH_RESULT','Rechercher');
+define('TEXT_ACTION','action');
+
+define('RATE_TITLE','Taux Maintenant');
+define('RATE_TEXT','Taux');
+
+define('TEXT_SELECT_DEPARTMENT_AND_CATEGORY','Sélectionner Département & Catégorie');
+?>

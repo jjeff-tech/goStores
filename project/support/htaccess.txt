@@ -1,0 +1,1 @@
+RewriteRule ^product-(.*)-(.*)-([0-9]+).html$ viewkbentry.php?id=$3&productname=$2

@@ -1,0 +1,29 @@
+.outer_wrapper{
+	width:100%;
+}
+@media (max-width: 767px) {
+.header_phnandlogin{
+	float:left; width:100%
+	}
+	.header_phnandlogin .header_phnno{
+	float:left; width:100%; border:0px;
+	}
+	.header_phnandlogin .header_phnno p{
+	padding-left:0px;
+	}
+	.header_phnandlogin .login_btn a{
+	padding:0px; margin-left:0!important;
+	}
+
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .container {
+    width: 1170px!important;
+  }
+}
+@media (min-width: 1300px) {
+  .container {
+    width: 1280px!important;
+  }
+}
+

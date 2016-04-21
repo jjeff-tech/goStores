@@ -1,0 +1,13 @@
+Admin
+--------
+admin/admin
+
+Users
+--------
+james/123456
+smith/123456
+
+Sellers
+---------
+robert/123456
+michael/123456

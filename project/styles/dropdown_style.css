@@ -1,0 +1,142 @@
+ul.dropmenu{
+	position: relative;
+	margin: 0px;
+	padding: 1px 0px 0px 0px;
+	background:transparent url(images/navigation.png) repeat-x scroll 0 0;
+	display:block;
+	height: 35px;
+	font-family:Lato,Arial, Helvetica, sans-serif;
+	font-size:20px;
+}
+.dropmenu li{
+	position: relative;
+	list-style: none;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+.dropmenu li a{	
+	padding: 15px 15px 0px 15px;
+	display: block;
+	cursor: pointer;
+	color: #000;
+	text-decoration: none;
+}
+
+.dropmenu li.haschildren a{
+	/*padding:5px 0 5px 5px!important;*/
+	
+}
+
+.dropmenu li span{
+	display: block;
+	float: right;
+	height: 10px;
+	width: 10px;
+	
+}
+.dropmenu li  a:hover span{
+	background:transparent url(images/arrow_hover.png) repeat-x scroll 0 0;
+}
+.dropmenu li:hover ul, .dropmenu li:hover div{
+	display: block;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	/*border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;*/
+}
+.dropmenu ul{
+	position: absolute;
+	display: none;
+	width: 125px;
+	padding-bottom: 5px;
+	margin: 3px 0 0 !important;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+	/*border-right: 1px solid #000;
+	border-left: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color:#FFFFFF;*/
+	background:url(images/shadow_bottom.png);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	-moz-box-shadow: 0 8px 6px -6px black;
+	 box-shadow: 0 8px 6px -6px black;
+	
+}
+.dropmenu ul li{
+	border: 0;
+	float: none; padding:5px 0 5px 0!important;
+	border-bottom: 1px solid #e1e1e1;
+	/*background-color:#00CCFF;*/
+	width:115px; margin:0;
+	
+}
+
+.dropmenu ul a {  white-space: nowrap;
+  display:block;
+  text-decoration: underline;
+  text-transform: none;
+}
+/*a.selected, a:hover{
+	color:#000!important;
+	background: #FFFFFF;
+}
+a.selected span{
+	background:transparent url(images/arrow_hover.png) repeat-x scroll 0 0;
+}*/
+.dropmenu ul a:hover {
+	color:#F67A00 !important;
+	text-decoration: none;
+	/*background-color: #333333;*/
+	display:block;
+}
+.dropmenu div ul{
+	position: relative;
+	display: block;
+}
+.dropmenu li div{
+	background: #FFFFFF url(images/gradient.png) repeat-x scroll 0 0;
+	border: 1px solid #ccc;
+	padding: 5px;
+	display: none;
+	position: absolute;
+}
+.dropmenu li div ul{
+	border: none;
+	background: none;
+	position: relative !important;
+}
+.dropmenu li div a{
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width:130px;
+}
+.dropmenu li div div{
+	display: block;
+	position: relative;
+	background: none;
+	border: none;
+}
+.dropmenu li div div a{
+	display: inline;
+	border: none;
+	color: #666;
+	text-decoration: underline;
+	padding: 0px;
+	margin: 0px;
+	text-transform: none;
+}
+.dropmenu li div div a:hover{
+	color: #000;
+	text-decoration: none;
+}
+.submenu li{
+	margin:5px 0 5px 0; 
+}

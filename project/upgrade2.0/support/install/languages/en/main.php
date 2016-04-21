@@ -1,0 +1,67 @@
+<?php
+define('TITLE_INSTALLATION','Installation Procedure');
+define('STEP-I','Step I of V');
+define('STEP-II','Step II of V');
+define('STEP-III','Step III of V');
+define('STEP-IV','Step IV of V');
+define('STEP-V','Step V of V');
+define('STEP-VI','Installation Complete');
+define('SUBHEADER-I','Database configuration');
+define('SUBHEADER-V','Installation Complete');
+define('DATABASE_NAME','Database Name');
+define('DATABASE_USER','Database User');
+define('DATABASE_PASSWORD','Database Password');
+define('HOST_NAME','Host Name');
+define('NEXT','Next');
+define('SITE_TITLE','Site Title');
+define('LOGO_URL','Logo');
+define('EMAIL_HEADER','Email Header');
+define('EMAIL_FOOTER','Email Footer');
+define('BACK','Back');
+define('DEFAULT_LANGUAGE','Default Language');
+define('LANGUAGE_CHOICE','Language Choice');
+define('AUTOMATIC_LOCKING','Allow automatic locking of tickets ? ');
+define('VERIFY_TEMPLATES','Allow admin to verify templates ? ');
+define('VERIFY_KNOWLEDGEBASE','Allow admin to verify knowledgebase entries ? ');
+define('ADMIN_MAIL','Admin Mail');
+define('MAIL_TECHNICAL','Technical Mail');
+define('MAIL_ESCALATION','Escalation Mail');
+define('MAIL_FROM_NAME','Mail From Name');
+define('MAIL_FROM_MAIL','Mail From Mail');
+define('MAIL_REPLY_NAME','Mail Reply Name');
+define('MAIL_REPLY_MAIL','Mail Reply Mail');
+define('INSTALLATION_COMPLETE','Installation Complete');
+define('INSTALLATION_COMPLETE_DETAIL','Your installation steps have been completed.<br>&nbsp;<br> Now you need to perform the following operations.<br>&nbsp;<br>&nbsp;1)Remove the \'Write\' permission provided to the file \'config/settings.php\'.<br>&nbsp;<br>2)Delete the \'install\' folder.&nbsp;<br>&nbsp;<br><a href="../admin/index.php" class=listing>Login to admin section.</a><br>&nbsp;<br>username : \'admin\'  <br> password &nbsp;: \'admin\'<br>');
+define('YES','Yes');
+define('NO','No');
+define('TEXT_NONE','None');
+define('DATABASE_NOT_AVAILABLE','Database Not Available.');
+define('CONNECTION_ERROR','Connection cannot be established.');
+define('DATABASE_CONFIGURED','Database Configured.');
+define('FILE_TYPE_NOT_PERMITTED','File type not permitted.');
+define('STEPS_COMPLETED','Total no. of steps completed ');
+define('JS_MANDATORY_ERROR','Please enter values for all mandatory fields.');
+define('SITE_URL','Site Url');
+define('HELPDESK_URL','Helpdesk Url');
+define('TEXT_PIPING_ON','Turn Email Piping ON');
+define('TEXT_PIPING_STEPS','Steps to set forwarder for your mails');
+define('TEXT_PIPING_DETAILS1','To use mail forwarder for your ticket system please follow the step given below');
+//define('TEXT_PIPING_DETAILS2','(i) Add &nbsp;&nbsp;<font color="#CC0000" style="font-weight:bold;">path_to_php -q yourinstalldirectory/parser/parser.php</font>&nbsp;&nbsp; as the forwarder address for your support mail address.<br>&nbsp;<br>Eg: <font color="#CC0000" style="font-weight:bold;">/usr/bin/php -q /home/user/www/support/parser/parser.php</font><br>&nbsp;<br>');
+define('TEXT_PIPING_DETAILS2','(i) Add &nbsp;&nbsp;<font color="#CC0000" style="font-weight:bold;">path_to_php -q yourinstalldirectory/parser/parser.php</font>&nbsp;&nbsp; as the forwarder address for your support mail address.<br>&nbsp;<br>');
+define('TEXT_PIPING_DETAILS3','NOTE: The default \'Support\' department added during the installation process will use \'dept@yoursite.com\' as its contact email. Hence you need to set the forwarder for this email address. If you are setting a forwarder');
+define('TEXT_PIPING_DETAILS4',' for a different address please modify the email address of the department \'Support\' after logging into Admin Panel.');
+define('TEXT_PIPING_OFF','Turn Email Piping OFF');
+define('TEXT_PIPING_DETAILS5','Turning OFF Email Piping will restrict users  from sending tickets as email.');
+
+define('TEXT_POP3_SETTING','Pop3 settings');
+define('TEXT_POP3_STEPS','Steps to set pop3 for your mails');
+define('TEXT_POP3_DETAILS1','To use pop3 to fetch mail for your ticket system please follow the step given below');
+define('TEXT_POP3_DETAILS2','(i) Add &nbsp;&nbsp;<font color="#CC0000" style="font-weight:bold;">path_to_php -q yourinstalldirectory/parser/pop3.php</font>&nbsp;&nbsp; "Command to run" in the cron/task manager setting.Set the cron/task manager to run in every minute.<br>&nbsp;<br>');
+define('TEXT_POP3_DETAILS3','NOTE: The default \'Support\' department added during the installation process will use \'dept@yoursite.com\' as its contact email. Hence you need to set the pop3 for this email address. If you are setting a pop3');
+define('TEXT_POP3_DETAILS4',' for a different address please modify the email address of the department \'Support\' after logging into Admin Panel.');
+
+define('SITE_LICENSEKEY','License Key');
+define('TEXT_LICENSEKEY_HELP','The script would function only for the domain it is licensed. If you cannot recall the license, its also included in the email you received with subject: iScripts.com software download link. You can also get the license key from your user panel at www.iscripts.com');
+define('TEXT_ERROR_LICENSEKEY','License key can not be empty');
+
+?>

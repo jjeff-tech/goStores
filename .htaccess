@@ -1,0 +1,19 @@
+RewriteEngine on
+#AccessFileName index.php
+
+#RewriteRule ^debugger/([0-9]+)$  index/debugger?page=$1 [L]
+#RewriteRule ^index/offers/([0-9]+)$  index/offers?page=$1 [L]
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteRule ^Demo(.*) project/Demo/$1
+RewriteRule ^support(.*) project/support/$1 [L]
+RewriteRule ^upgrade2.0(.*) project/upgrade2.0/$1 [L]
+RewriteRule ^upgrade2.1(.*) project/upgrade2.1/$1 [L]
+
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.+) index.php/$1 [L]
+

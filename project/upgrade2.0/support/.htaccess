@@ -1,0 +1,13 @@
+Options +FollowSymLinks
+ServerSignature Off
+
+RewriteEngine On
+
+RewriteBase /support
+
+RewriteRule ^viewkbentry/([^/]+)/([^/]+) viewkbentry.php?id=$2
+RewriteRule ^viewuserkbsearchresult/([^/]+)/([^/]+) viewuserkbsearchresult.php?id=$2
+
+RewriteRule ^admin/languages/([^/]+)/help/([^/]+).htm admin/languages/$1/help/$2.php [L]
+
+RewriteRule ^languages/([^/]+)/help/([^/]+).htm languages/$1/help/$2.php [L]

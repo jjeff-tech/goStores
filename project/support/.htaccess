@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{QUERY_STRING} q=(.*)
+RewriteRule ^kb/search(.*)$ knowledgebase.php?txtKbTitleSearch=%1 [NC,QSA,L]
+RewriteRule ^kb/([^/]+)/catid=(.*) kblisting_by_category.php?id=$2 [L]
+RewriteRule ^kb/([^/]+)/([^/]+) viewkbentry.php?id=$2 [L]
+RewriteRule ^kb/(.*) knowledgebase.php?$1 [L]
+#RewriteRule ^kb/([^/]+)/([^/]+) viewkbentry.php?id=$2
+RewriteRule ^viewuserkbsearchresult/([^/]+)/([^/]+) viewuserkbsearchresult.php?id=$2

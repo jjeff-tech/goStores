@@ -1,0 +1,126 @@
+@CHARSET "ISO-8859-1";
+
+#message-green {
+    margin-bottom: 5px;
+    width:100%;
+    margin-right:38px;
+}
+#user-message-green {
+    margin-bottom: 5px;  
+    
+}
+.green-left {
+    background: url("images/admin/message_green.gif") no-repeat scroll left top transparent;
+    color: #6DA827;
+    font-family: Tahoma;
+    font-weight: bold;
+    line-height: 12px;
+    padding: 0 0 0 20px;
+}
+.green-left a {
+    color: #6DA827;
+    font-family: Tahoma;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.green-right a {
+    cursor: pointer;
+}
+.green-right {
+    width: 55px;
+}
+#message-red {
+  
+    background-color: #FBD3B1;
+    border-radius: 5px;
+    padding: 10px;
+}
+#user-message-red {
+    margin-bottom: 5px;   
+    border-radius: 5px;    
+}
+.red-left {
+    background: url("images/admin/message_red.gif") no-repeat scroll left top transparent;
+    color: #CE2700;
+    font-family: Tahoma;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+}
+.red-left a {
+    color: #CE2700;
+    font-family: Tahoma;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.red-right a {
+    cursor: pointer;
+}
+.red-right {
+    width: 55px;
+    padding: 5px;
+}
+
+.error {
+    color: #FF0000;
+   font-family: 
+    margin-left: 2px;
+    font-weight: normal!important;
+.success {
+    color: #6DA827;
+    font-family:'akrobatregular'!important;
+    margin-left: 2px;
+    font-weight: bold;
+}
+.sl_no_padding{
+    padding-left: 5px;
+}
+
+.r_float {
+    float: right;
+    margin-bottom: 20px;
+}
+
+.l_float {
+    float: left;
+}
+
+.search_container {
+    float: left;
+}
+
+.margin_right {
+    margin-right: 20px;
+}
+
+.search_box {
+    float: left;
+    height: 30px;
+    margin-right: 10px;
+    padding: 0 10px 0 10px;
+    width: 250px;
+}
+
+.mandred{
+    color: red;
+    font-size: 13px;
+}
+
+.create_account{
+     margin-left: 110px;
+}
+
+.placeholder{
+    margin-top: 2px;
+    color: silver;
+}
+.cms-content{}
+.cms-content ul{ margin:0 0 0 15px}
+.cms-content ul li{ list-style-type:disc; line-height: 20px!important; }
+.domainsearchsuccess {
+    color: green!important;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input
+{
+    height: auto!important;
+}

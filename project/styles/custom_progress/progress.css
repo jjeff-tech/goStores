@@ -1,0 +1,57 @@
+/* CSS Document */
+
+.progress_outer{
+	width:100%;
+	font-family:Arial, Helvetica, sans-serif;
+	/*background:url(progressbarbg.jpg) 0% 0% no-repeat;*/
+	padding: 0px;
+	margin:90px auto 0 auto;
+}
+.clear{
+	clear:both;
+}
+.progress_bar{
+	width:100%;
+	float:left;
+	position:relative;
+	
+}
+.bar{
+	background:url(progress.png) 0% 0% no-repeat;
+	height:37px;
+}
+.pointer{
+	height:55px;
+	background:url(pointer.png) 135px  70px no-repeat;
+	position:absolute;
+	top:-89px;
+	font-size:13px;
+	color:#666;
+	padding: 20px 20px 10px 0;
+	text-align:left;
+	
+	
+}
+.pointer p{
+	font-family:"trebuchet MS", Arial;
+	font-size:13px;
+	color:#595959;
+	}
+.pointer p span{
+	color:#00b894;
+	font-size:16px;
+	font-weight:normal;}
+.progress_count{
+	float:left;
+	color:#000;	
+	font-size:18px;
+	margin: 20px 0 20px 10px;
+    padding: 8px;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	font-family:"trebuchet MS", Arial;
+	background-color:#ffffff;
+	font-size:13px;
+	color:#0092F3;
+}

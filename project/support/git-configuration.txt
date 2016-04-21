@@ -1,0 +1,1 @@
+should copy settings.php from \\192.168.0.11\products\supportdesk\config\ to local config folder

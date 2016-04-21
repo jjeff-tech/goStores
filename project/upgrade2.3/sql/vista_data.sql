@@ -1,0 +1,1 @@
+UPDATE `goStores_Vista_users` SET `usertype`='Retail', `reg_status`='R' WHERE  `id`=1 LIMIT 1;

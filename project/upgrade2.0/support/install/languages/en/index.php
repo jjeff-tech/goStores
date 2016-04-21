@@ -1,0 +1,38 @@
+<?php
+define('TITLE_INSTALLATION','Installation Procedure');
+define('NEXT','Next');
+define('REFRESH','Refresh');
+define('HEADER_PRELIMINARY_CHECK','Preliminary File/Folder Permission Check');
+define('HEADING_UPLOAD_TEST','Upload Test');
+define('TEXT_UPLOAD_TEST','Upload Test');
+define('TEXT_DIRECTORY_NAME','Name');
+define('TEXT_PATH_NAME','Path');
+define('TEXT_SETTINGS','Settings');
+define('TEXT_PERMISSION','Current Status');
+define('TEXT_RECOMENDED','Alteration Required');
+define('TEXT_MESSAGE_PERMISSION_NOT_AVAILABLE','Write Permission unavailable');
+define('TEXT_MESSAGE_PERMISSION_AVAILABLE','Write Permission available');
+define('TEXT_MESSAGE_RECOMENDED','Enable write permission to folder');
+define('TEXT_MESSAGE_FILE','Enable write permission to file');
+define('TEXT_STYLES','Styles');
+define('TEXT_ATTACHMENTS','Attachments');
+define('TEXT_CONFIG','Config');
+define('TEXT_DOWNLOADS','Downloads');
+define('TEXT_API','Api');
+define('TEXT_CUSTOM','Custom');
+define('TEXT_BACKUP','Backup');
+define('TEXT_NONE','<font color=green><b>None</b></font>&nbsp;');
+define('TEXT_WRITE_PERMISSION_AVAILABLE','<font color=green><b>Write permission available</b></font>');
+define('TEXT_WRITE_PERMISSION_UNAVAILABLE','<font color=red><b>Write permission not available</b></font>');
+define('TEXT_ENABLE_WRITE_PERMISSION','<font color=red>Enable write permission to folder</font>');
+define('TEXT_ENABLE_WRITE_FILE','<font color=red>Enable write permission to file</font>');
+define('TEXT_CURRENT','Current Value');
+define('TEXT_REQUIRED','Action');
+define('HEADER_VERSION_CHECK','General Settings/Version Check');
+define('JS_FILE_LENGTH','Please select a file to upload.');
+define('SAFE_MODE_ERROR','Please turn off safe_mode in php.ini');
+define('TEXT_PHP_VERSION_ERROR','(4.3.0 or higher required)');
+define('TEXT_PURGED_ATTACHMENTS','Purged Attachments');
+define('TEXT_PURGED_TICKETS','Purged Tickets');
+define('TEXT_CSVFILE','CSV Files');
+?>

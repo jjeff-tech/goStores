@@ -1,0 +1,50 @@
+EDDIE
+-------------------------------
+User:-            clients_eddiebi
+password:-        eddie123
+database:-        clients_eddiebille 
+
+Licence key:-     129CSI160101000009719161110STP
+
+Local
+----------
+http://192.168.0.11/customizations/easybiller/eddie/work/
+
+iScripts
+----------
+http://clients.iscripts.com/eddie/
+
+
+WENDEL
+--------------------------------
+user:-            clients_wendelb  
+password:-        wend123
+database:-        clients_wendel
+
+Local
+----------
+http://192.168.0.11/customizations/easybiller/wendel/work/
+
+iScripts
+----------
+http://clients.iscripts.com/wendel/
+
+admin: robertwilliams121212@gmail.com
+
+
+
+http://clients.iscripts.com:2082/frontend/x3/index.html
+
+
+
+
+USPS TEST ACCOUNT
+-------------------------
+758MERCH6513
+
+Canada post needs the origin zip to be canadian, ie; the admin should be located in
+Canada.
+
+
+
+

@@ -1,0 +1,152 @@
+/* CSS Document */
+#tabs_wrapper {
+	width: 930px;
+}
+#tabs_container {}
+#tabs {
+	padding: 5px 0 10px 0;
+	margin: 20px 0 0 0px;
+}
+#tabs li {
+	float:left; font-size:16px; margin:0 3px 0 0; list-style:none
+}
+#tabs li a {
+	border: 1px solid #E5E3E3;
+	padding: 15px 15px 10px 10px;
+	text-decoration: none;
+	background:url(themes/theme1/images/menubg_tab.jpg) 0% 0% #F2F3F3 repeat-x;
+	border-bottom: none;
+	color:#515253;
+	outline: none;
+	border-radius: 5px 5px 0 0;
+
+	font-size:15px;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+#tabs li a span{
+	background:url(themes/theme1/images/tabicon_bgnormal.png) 0% 50% no-repeat;
+
+	font-size:25px;
+	color:#FFFFFF;
+	font-weight:normal;
+	padding:0 9px 3px 9px;
+	}
+#tabs li a:hover span{
+	background:url(themes/theme1/images/tabicon_bgactive.png) 0% 50% no-repeat;
+	
+	font-size:25px;
+	color:#FFFFFF;
+	font-weight:normal;
+	padding:0 9px 3px 9px;
+	}
+#tabs li.active a span{
+	background:url(themes/theme1/images/tabicon_bgactive.png) 0% 50% no-repeat;
+	
+	font-size:25px;
+	color:#FFFFFF;
+	font-weight:normal;
+	padding:0 9px 3px 9px;
+	}
+#tabs li a:hover {
+	padding: 15px 15px 10px 10px;
+	background:url(themes/theme1/images/menubg_normal.jpg) 0% 100% repeat;
+}
+#tabs li.active a {
+	border-bottom: 1px solid #ffffff;
+	background:url(themes/theme1/images/menubg_normal.jpg) 0% 100% repeat-x;
+	padding: 15px 15px 10px 10px;
+	color:#255994
+}
+/*#tabs li.active a:hover {
+	background-color: #eeeeee;
+	padding: 15px 15px 10px 10px;
+	border-bottom: none;
+}
+*/
+#tabs li a.icon_accept {
+	background-image: url(accept.png);
+	background-position: 5px;
+	background-repeat: no-repeat;
+	padding-left: 24px;
+}
+#tabs li a.icon_accept:hover {
+	padding-left: 24px;
+}
+
+#tabs_content_container {
+	/*border: 1px solid #dbddde;
+	padding:50px;
+	background:url(themes/theme1/images/paymenttab_bg.jpg) 0% 100% #FCFCFC repeat-x;
+	
+	background:#daf8f2;*/position:relative;
+}
+.tab-bg
+{
+	padding:50px;
+	background:#daf8f2;
+}
+.tab_content {
+	display: none;
+
+}
+.tab-content-left{}
+.tab-content-left p{font-size:13px; color:#676664; line-height:20px; padding:5px 0}
+.tab-content-right{width:225px; padding:15px; background:#f2f5f6; border:1px solid #e6e6e6}
+.tab-right-row{width:225px; margin:10px 0; font-size:13px}
+.tbl{width:100px; color:#676664; background:url(../images/column.jpg) no-repeat 99px 5px; padding:0 5px 0 0}
+.tbr{width:105px}
+
+#top-tabs {
+	padding: 5px 0 4px 0;
+	margin: 20px 0 0 0px;
+}
+#top-tabs li {
+	float:left; font-size:16px; margin:0 10px 0 0;
+}
+#top-tabs li a {
+	border: 1px solid #ccc;
+	padding: 4px 15px;
+	text-decoration: none;
+	background-color: #eeeeee;
+	border-bottom: none;
+	color:#515253;
+	outline: none;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+#top-tabs li a:hover {
+	background-color: #dddddd;
+	padding: 4px 15px;
+}
+#top-tabs li.active a {
+	border-bottom: 1px solid #fff;
+	background:#fff;
+	padding: 4px 15px; color:#255994
+}
+#top-tabs li.active a:hover {
+	background-color: #eeeeee;
+	padding: 4px 15px;
+	border-bottom: none;
+}
+
+#top-tabs li a.icon_accept {
+	background-image: url(accept.png);
+	background-position: 5px;
+	background-repeat: no-repeat;
+	padding-left: 24px;
+}
+#top-tabs li a.icon_accept:hover {
+	padding-left: 24px;
+}
+
+#top-tabs_content_container {
+	border-left: 1px solid #dbddde;
+	border-right: 1px solid #dbddde;
+	padding: 15px 10px 15px 10px;
+	width: 913px;
+}
+.num{display:inline-block}

@@ -1,0 +1,193 @@
+<div class="form_container">
+    <div class="form_top">Add Product</div>
+    <div class="form_bgr">
+        <?php PageContext::renderPostAction('errormessage','index');?>
+        <!--<form name="frmAddProduct" id="frmAddProduct" action="<?php //echo BASE_URL; ?>admin/products/addproduct" method="post" enctype="multipart/form-data" onsubmit="return validateProduct()">-->
+        <form name="frmAddProduct" id="frmAddProduct" method="post" action="<?php echo BASE_URL; ?>admin/products/addproduct" enctype="multipart/form-data" onsubmit="return validateProduct()" >
+            <!-- Product Add Area -->
+        <div class="comm_section">
+            <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="formstyle">
+                <tr>
+                    <td align="left" valign="top" width="20%">Product  <span class="mandred">*</span></td>
+                    <td align="left" valign="top">
+                        <input name="productName" id="productName" type="text" maxlength="200" value="<?php echo stripslashes($this->dataArr['vPName']) ?>" validate="required:true">
+                        <label id="product_name_error" class="error"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Release  <span class="mandred">*</span></td>
+                    <td align="left" valign="top">
+                        <input name="productRelease" id="productRelease" type="text" style="width:50px" maxlength="10" size=5 value="<?php echo stripslashes($this->dataArr['vVersion']) ?>" validate="required:true">
+                         <label id="product_release_error" class="error"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Caption  <span class="mandred">*</span></td>
+                    <td align="left" valign="top">
+                        <input name="productCaption" id="productCaption" type="text" maxlength="200" value="<?php echo stripslashes($this->dataArr['vProductCaption']) ?>" validate="required:true">
+                        <label id="product_caption_error" class="error"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Logo  <span class="mandred">*</span><br>
+                        
+                    </td>
+                    <td align="left" valign="top">
+                        <input name="productLogo" id="productLogo" type="file" validate="required:true"/>
+                        <img src="<?php echo IMAGE_URL; ?>icon_help.gif" border="0" alt=""  title="Ideal size is 240 X 320 or greater."  />
+
+                        <label id="product_logo_error" class="error"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Logo(small)  <span class="mandred">*</span><br>
+                        
+                    </td>
+                    <td align="left" valign="top">
+                        <input name="productLogoSmall" id="productLogoSmall" type="file" validate="required:true" />
+                        <img src="<?php echo IMAGE_URL; ?>icon_help.gif" border="0" alt=""  title="Ideal size is 122 X 77 or greater."  />
+                        <label id="product_logo_small_error" class="error"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Screens  <span class="mandred">*</span><br>
+                    </td>
+                    <td align="left" valign="top">
+                        <input name="productScreens" id="productScreens" type="file" validate="required:true" />
+                        <img src="<?php echo IMAGE_URL; ?>icon_help.gif" border="0" alt=""  title="Ideal size is 487 X 305 or greater."  />
+                        <label id="product_screen_error" class="error"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Description</td>
+                    <td align="left" valign="top">
+                        <textarea name="productDescription" id="productDescription" class=textarea rows=12 cols=64 style="width:350px;"><?php echo stripslashes($this->dataArr['vProductDescription']) ?></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Installation Permissions<br>
+                       
+                    </td>
+                    <td align="left" valign="top">
+                        <textarea name="productPermission" id="productPermission" class=textarea rows=12 cols=64 style="width:350px;"><?php echo  stripslashes($this->dataArr['vPermissions']) ?></textarea>
+                        <img src="<?php echo IMAGE_URL; ?>icon_help.gif" border="0" alt=""  title="Eg : images/, images/album/, images/classifieds/"  />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top">Product  <span class="mandred">*</span><br>
+                       
+                    </td>
+                    <td align="left" valign="top">
+                        <input name="productPack" id="productPack" type="file"  validate="required:true"/>
+                        <img src="<?php echo IMAGE_URL; ?>icon_help.gif" border="0" alt=""  title="Allowed Type : 'zip', Max Upload Size : <?php echo $this->maxUpload ;?> MB"  />
+                        <label id="product_pack_error" class="error"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left" valign="top"></td>
+                    <td align="left" valign="top"></td>
+                </tr>
+            </table>
+        </div>
+        <!-- Product Add Area Ends -->
+        <!-- Product Service Area -->
+        <h3>Services</h3>
+        <div class="serv_container" id="productSer">
+            <ul>
+                <!-- looping section-->
+                <li class="header">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="tbl">
+                        <tr>
+                            <th align="left" valign="top" width="2%"><?php echo $this->checkbox('chkAll', '1', NULL, NULL, 'chkAll'); ?></th>
+                            <th align="left" valign="top" width="20%">Name</th>
+                            <th align="left" valign="top" width="25%">Description</th>
+                            <th align="left" valign="top" width="15%">Price</th>
+                            <th align="left" valign="top" width="20%">Service Category</th>
+                            <th align="left" valign="top" width="18%">Billing Duration</th>                            
+                        </tr>
+                    </table>
+                </li>
+
+                <!-- looping section-->
+                <?php
+                $i=0;
+                $k=0;
+                foreach($this->dataSerArr as $dataSerItem) {
+                    ++$i;
+                    //echo '<pre>'; print_r($dataSerItem); echo '</pre>';
+                    $k=$i-1;
+                ?>
+                <li class="serviceItem" id="serItem_<?php echo $i ?>">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" class="tbl">
+                        <input type="hidden" name="nServiceId[]" id="nServiceId_<?php echo $i; ?>" value="<?php echo $dataSerItem['nServiceId'] ?>" />
+                        <tr>
+                            <td align="left" valign="top" width="2%"><?php echo $this->checkbox('chkService[]', '', 'x', NULL, NULL); ?></td>
+                            <td align="left" valign="top" width="20%">
+                                <input type=text name="serviceName[]" id="serviceName_<?php echo $i; ?>" value="<?php echo stripslashes($dataSerItem['vServiceName']); ?>" class="textbox width2">
+                              
+                                <div class="error" id="service_name_error_<?php echo $i; ?>"></div>
+                              
+                            </td>
+                            <td align="left" valign="top" width="20%">
+                                <textarea name="serviceDescription[]" id="serviceDescription_<?php echo $i; ?>" class="textarea width2"><?php echo stripslashes($dataSerItem['vServiceDescription']); ?></textarea>
+                               
+                                <div class="error" id="service_description_error_<?php echo $i; ?>"></div>
+                               
+                            </td>
+                            <td align="left" valign="top" width="10%">
+                                <?php echo CURRENCY_SYMBOL; ?><input type=text name="servicePrice[]" id="servicePrice_<?php echo $i ?>" value="<?php echo stripslashes($dataSerItem['price']); ?>" class="textbox width3">
+                                
+                                <div class="error" id="service_price_error_<?php echo $i; ?>"></div>
+                               
+                            </td>
+                            <td align="left" valign="top" width="20%">
+                                    <?php echo $this->select("serviceCategory[]",$this->sCatArr,$dataSerItem['nSCatId'],'textbox width2', NULL, 'serviceCategory'.$i); ?>
+                            </td>
+                            <td align="left" valign="top" width="18%">
+                                    <?php echo $this->radio('billingType['.$k.']', 'M', $dataSerItem['vBillingInterval'], NULL, '&nbsp;', NULL); ?> Month(days)<br>
+                                    <?php echo $this->radio('billingType['.$k.']', 'Y', $dataSerItem['vBillingInterval'], NULL, '&nbsp;', NULL); ?> Year<br>
+                                    <?php echo $this->radio('billingType['.$k.']', 'L', $dataSerItem['vBillingInterval'], NULL, '&nbsp;', NULL); ?> Lifetime<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="billingInterval[]" id="billingInterval_<?php echo $i; ?>" value="<?php echo stripslashes($dataSerItem['nBillingDuration']); ?>"  class="textbox width3" maxlength="6">                              
+                                <div class="error" id="service_billing_duration_error_<?php echo $i; ?>"></div>                               
+                            </td>                       
+                        </tr>
+                    </table>
+                </li>
+                <?php
+                
+                }
+                ?>
+                <!-- looping section ends-->
+                <li class="common">
+                    <div class="clear">
+                        <div class="l_float">
+                            <input name="deleteChk" id="deleteChk" type="button" class="comm_button_small" value="Delete Selected">
+                        </div>
+                        <div class="r_float">
+                            <input type=text name="addNew" id="addNew" value="" class="textbox width3">	&nbsp;
+                            <input type="hidden" name="countL" id="countL" value="<?php echo $i ?>">
+                            <input type="button" value="Add More Service" class="comm_button_small" onclick="newServiceItem()" />
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+        <!-- Product Service Area Ends -->
+        <!-- Add Button -->
+         <table  width="98%" border="0" align="center" cellpadding="0" cellspacing="0" class="formstyle">
+                <tr>
+        <th align="left" valign="top"><div class="cancel"><a href="<?php echo BASE_URL;?>admin/products/index">Cancel</a></div></th>
+        <td valign="top">
+            <input type="submit" class="comm_button" name="btnSubmit" value="Save Changes" /></td>
+        </tr>
+         </table>
+        
+        <!-- Add Button Ends -->
+    </form>
+    </div>
+    <div class="form_bottom"></div>
+
+</div>

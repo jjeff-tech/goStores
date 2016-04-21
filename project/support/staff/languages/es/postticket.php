@@ -1,0 +1,34 @@
+<?php
+define('HEADER_POST_TICKET','Nota de entradas');
+define('TEXT_GENERAL_INFO','Información General');
+define('TEXT_TICKET_INFO','Noticias RSS');
+define('TEXT_ATTACHMENTS','archivos adjuntos');
+define('TEXT_POST_TICKET','Nota de entradas');
+define('TEXT_DEPT','Seleccione el Departamento');
+define('TEXT_PRIORITY','prioridad');
+define('TEXT_TICKET_TITLE','título');
+define('TEXT_TICKET_MATTER','Descripción del problema/preocupación');
+define('TEXT_ATTACH_REFERENCE','de referencia');
+define('TEXT_ATTACH_URL','Seleccione Archivo');
+define('BUTTON_TEXT_ATTACH','adjuntar');
+define('TEXT_TITLE_DELETE','eliminar');
+define('POST_NAME','Nombre de usuario');
+define('USER','User');
+define('LOGIN_NAME','Login Name');
+define('PASSWORD','Password');
+define('TEXT_USER_EMAIL','Email');
+define('BUTTON_TEXT_REMOVE','eliminar');
+define('BUTTON_TEXT_SUBMIT','presentar');
+define('MESSAGE_REFNAME_ERROR','Ya sea de referencia está vacía o ya existentes');
+define('MESSAGE_DEPT_NOT_SELECTED','Departamento no seleccionados');
+define('MESSAGE_USER_NOT_EXISTS','Please select user.');
+define('ENTER_EMAIL','Please enter the E-mail id.');
+define('ENTER_LOGIN_NAME','Please enter the login name.');
+define('ENTER_PASSWORD','Please enter password.');
+define('TEXT_LOGIN_ACCOUNT',' to login to your account.');
+define('EXIST_MESSAGE',' The user already exists !');
+define('TEXT_USER_LOGIN','Login Name');
+define('TEXT_USER_PASSWORD','Password');
+define('TEXT_MAIL_WELCOME_TAIL','Thank you,');
+define('TEXT_MAIL_WELCOME_HEAD','Hello,<br>Your account has been created with us. Your account details are <br>');
+?>

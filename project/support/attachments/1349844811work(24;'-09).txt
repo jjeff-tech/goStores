@@ -1,0 +1,26 @@
+if ($frm_status == "escalated" &&
+
+icon_Url
+
+txticon_Url
+
+$var_icon_Url
+
+cmbColor
+
+<?php
+                                                                                                      $prior_icon = "../ticketPriorLogo/" . $row["vPrioritie_icon"];
+                                                                                                      if($prior_icon == "")
+                                                                                                        $prior_icon = "../ticketPriorLogo/noicon.jpg";
+
+                                                                                                     
+                                                                                                      ?>
+                                                                                                      <img src="<?php echo $prior_icon;?>" alt="icon" height="50" width="50" >
+
+
+hidiconename
+                           
+
+cmbCompLp
+
+$var_email                                                                       

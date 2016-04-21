@@ -1,0 +1,101 @@
+<html>
+    <head>
+    </head>
+    <body style="width:100%; font-family:Arial; font-size:10pt; margin:0; padding:0;">
+        <p style=" margin:0; padding:0;">
+            {MAIL_CONTENT}
+        </p>
+        <div id="wrapper" style="width:180mm; margin:0 15mm;">
+
+            <p style="text-align:center; font-weight:bold; padding-top:5mm;">INVOICE</p>
+            <br />
+            <table class="heading" style="width:100%;border-left: 1px solid #ccc; border-top: 1px solid #ccc; border-spacing:0; border-collapse: collapse; height:50mm;">
+                <tr>
+                    <td style="width:80mm;border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding: 2mm;">                       
+                        <h1 class="heading" style="font-size:14pt;color:#000;font-weight:normal;">{COMPANY_NAME}</h1>
+                        <h2 class="heading" style="font-size:9pt;color:#000;font-weight:normal;">
+					{COMPANY_ADDRESS}
+
+					Website : {COMPANY_WEBSITE}<br />
+					E-mail : {COMPANY_EMAIL}<br />
+					Phone : {COMPANY_PHONE}
+                        </h2>
+                    </td>
+                    <td rowspan="2" valign="top" align="right" style="padding:3mm;border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;">
+                        <table style="border-left: 1px solid #ccc; border-top: 1px solid #ccc; border-spacing:0; border-collapse: collapse;">
+                            <tr><td style="border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding: 2mm;">Invoice No : </td><td style="border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding: 2mm;">{INVOICE_NUMBER}</td></tr>
+                            <tr><td style="border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding: 2mm;">Dated : </td><td style="border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding: 2mm;">{INVOICE_DATE}</td></tr>                          
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding: 2mm;">
+                        <b>Invoiced To :</b><br />
+    			{CLIENT_NAME}<br />
+			{CLIENT_ADDRESS}
+                        <br />
+    			{CLIENT_ADD_DETAILS}<br />
+                    </td>
+                </tr>
+            </table>
+
+
+            <div id="content">
+
+                <div id="invoice_body" style="width:100%;">
+                    <table style="width:100%;border-left: 1px solid #ccc;border-top: 1px solid #ccc;border-spacing:0;border-collapse:collapse;margin-top:5mm;">
+                        <tr style="background:#eee;">
+                            <td style="width:8%;border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding:2mm 0;text-align:center;font-size:9pt;"><b>#</b></td>
+                            <td style="border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding:2mm 0;text-align:center;font-size:9pt;"><b>Particulars</b></td>
+                            <td style="width:15%;border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding:2mm 0;text-align:center;font-size:9pt;"><b>Billing Type</b></td>
+                            <td style="width:15%;border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding:2mm 0;text-align:center;font-size:9pt;"><b>Rate</b></td>
+                            <td style="width:15%;border-right: 1px solid #ccc; border-bottom: 1px solid #ccc;padding:2mm 0;text-align:center;font-size:9pt;"><b>Total</b></td>
+                        </tr>
+                    </table>
+
+                    <table style="width:100%;border-left: 1px solid #ccc;border-top: 1px solid #ccc;border-spacing:0;border-collapse: collapse;margin-top:5mm;">
+                        {LOOPING_TEMPLATE}
+                        <tr>
+                            <td colspan="3" style="border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;"></td>
+                            <td style="border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;"></td>
+                            <td style="border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;"></td>
+                        </tr>                       
+                        <tr>
+                            <td colspan="3" style="border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;"></td>
+                            <td style="border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;">Total :</td>
+                            <td class="mono" style="font-family: monospace;font-size: 10pt;padding-right: 3mm;text-align: right; border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;">{TOTAL_AMOUNT}</td>
+                        </tr>
+                        <tr>
+				<td colspan="3" style="border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;"></td>
+				<td style="border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;">Discount :</td>
+				<td class="mono" style="font-family: monospace;font-size: 10pt;padding-right: 3mm;text-align: right; border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;">{DISCOUNT_AMOUNT}</td>
+			</tr>
+                        
+                    </table>
+                </div>
+                <div id="invoice_total" style="width:100%; margin-top:20px;">
+			Total Amount :
+                        <table style="width:100%;border-left: 1px solid #ccc;border-top: 1px solid #ccc;border-spacing:0;border-collapse:collapse;margin-top:5mm;">
+                        <tr>
+                            <td style="padding-left: 10px; text-align: left;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;">{FIGURE_AMOUNT}</td>
+                            <td style="width: 15%; border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;padding: 2mm 0;text-align: center;"></td>
+                            <td style="width: 15%;font-family: monospace;font-size: 10pt;padding-right: 3mm;text-align: right; border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;" class="mono">{GRAND_TOTAL}</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 10px; text-align: left;border-bottom: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC;font-size: 9pt;" colspan="3">Payment Status : <b>{PAYMENT_STATUS}</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+                <hr style="color:#ccc;background:#ccc;" />
+                <br />
+
+
+            </div>
+
+            <br />
+
+        </div>
+    </body>
+</html>
+

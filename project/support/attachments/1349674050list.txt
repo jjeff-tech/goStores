@@ -1,0 +1,6 @@
+<li class="accordionButton"><a href="javascript:void(0)" onClick="javascript:window.open('index_client_chat.php?comp=<?php echo $_SESSION["sess_usercompid"];?>&ref=visitorChat','LiveChat','width=475,height=500,resizable=yes,location=no');"><?php echo TEXT_LAUNCH_CHAT ?></a></li>
+              <!--  <li class="accordionContent" style="display:none">
+			<ul>
+				<li><a href="javascript:void(0)" onClick="javascript:window.open('index_client_chat.php?comp=<?php echo $_SESSION["sess_usercompid"];?>&ref=visitorChat','LiveChat','width=475,height=500,resizable=yes,location=no');"><?php echo TEXT_LAUNCH_CHAT ?></a></li>
+			</ul>		
+		</li>-->

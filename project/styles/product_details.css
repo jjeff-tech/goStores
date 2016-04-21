@@ -1,0 +1,321 @@
+/* CSS Document */
+
+.prod_banner_container {
+					width:1250px;
+					height:340px;	
+					position:relative;
+					background:url(images/prod_detail_banr_bgr.jpg) #674407 no-repeat;
+					margin:0;
+					}
+					
+					
+.prod_banner_container .buttons_container {width:547px;
+											height:183px;
+											position: absolute;
+											left:106px;
+											top:91px;
+											}
+											
+											
+.buttons_container h2 {font-family:Lato, Helvetica, sans-serif;
+					   font-size:24px;
+					   text-align:center;
+					   color:#ffffff;
+					   font-weight:normal;
+					   }
+											
+											
+.buttons_container h3 {font-family:Lato, Helvetica, sans-serif;
+						font-size:48px;
+						text-align:center;
+						font-weight:normal;
+						margin-top:25px;
+						color:#ffffff;}
+											
+.two_buttons {width:547px;
+			  margin-top:50px;
+			  }
+					
+
+.two_buttons .left_btn {width:266px;
+						height:75px;
+						float:left;
+						background:url(images/btn3_bg.png) no-repeat;
+						}
+						
+.two_buttons .left_btn a {
+    					color: #FFFFFF;
+   						display: block;
+    					font-family: Lato,Helvetica,sans-serif;
+    					font-size: 25px;
+    					font-weight: bold;
+    					height: 35px;
+    					padding: 22px 0 0 0;
+    					text-decoration: none;
+    					width: 266px;
+    					text-align:center;
+						}
+
+.two_buttons .left_btn a:hover{
+    					color:FFF!important;
+						background:none;
+   						display: block;
+    					font-family: Lato,Helvetica,sans-serif;
+    					font-size: 25px;
+    					font-weight: bold;
+    					height: 35px;
+    					padding: 22px 0 0 0;
+    					text-decoration: none;
+    					width: 266px;
+    					text-align:center;
+						}
+
+
+
+.two_buttons .right_btn	{width:266px;
+						height:75px;
+						float:right;
+						background:url(images/btn2_bg.png) no-repeat;
+						}	
+
+.two_buttons .right_btn a {
+    					color: #ff8910;
+   						display: block;
+    					font-family: Lato,Helvetica,sans-serif;
+    					font-size: 25px;
+    					font-weight: bold;
+    					height: 35px;
+    					padding: 22px 0 0 0;
+    					text-decoration: none;
+    					width: 266px;
+    					text-align:center;
+						}
+
+.prod_banner_container .screen_container   {
+					width:487px;
+					height:305px;
+					background:url(images/prod_screen_shot.png) no-repeat;
+					right: 25px;
+					position: absolute;
+					top: 24px;
+					}
+
+
+.prod_banner_container .screen_container_eswap {
+					width:487px;
+					height:305px;
+					background:url(images/prod_screen_shot_eswap.png) no-repeat;
+					right: 25px;
+					position: absolute;
+					top: 24px;
+					}
+					
+.prod_banner_container .screen_container_socialware {
+					width:487px;
+					height:305px;
+					background:url(images/prod_screen_shot_socialware.png) no-repeat;
+					right: 25px;
+					position: absolute;
+					top: 24px;
+					}
+
+
+.prod_details_content_area{
+	clear:both;
+	padding:25px 25px 25px 25px;
+	background-color:#FFFFFF;}
+	
+	
+.prod_details_content_area .prod_details_top_container {height:300px;}
+
+.prod_details_top_container .left_column {float:left; width:900px;}
+
+
+
+.left_column h2 {margin:0;
+				font-family:Lato,Helvetica, sans-serif;
+				font-size:28px;
+				color:#FF6A1B;
+				font-weight:bold;
+				}
+				
+				
+.left_column h3 {margin-top:8px;
+				font-family:Lato,Helvetica, sans-serif;
+				font-size:20px;
+				color:#666666;
+				font-weight:normal;
+				}
+				
+.left_column .four_rows_container {margin:15px 0 0 0; 
+								   height:196px;
+								   }				
+
+
+.four_rows_container .rows {width:194px;
+							height:196px;
+							margin:0 30px 0 0;
+							float:left;
+							}
+							
+.rows .row_top	{width:194px;
+				height:46px;
+				float:left;
+				background:url(images/prod_details_line_bgr.jpg) repeat-x bottom;
+				}
+				
+		.row_top h2 {font-family: Arial, Helvetica, sans-serif;
+		 			font-size:15px;
+					color:#FF6A1B;
+					padding: 0 0 0 40px;
+					background:url(images/prod_details_bulet_bgr.jpg) no-repeat left center;
+					}
+					
+					
+.rows .row_bottom {padding:10px 0 0 0;
+				   width:194px;
+				   float:left;
+				   font-family: Arial, Helvetica, sans-serif;
+		 		   font-size:14px;
+				   color:#666666;
+				   }
+				   
+.row_bottom p {margin:0;}
+
+.learn_more_container {width:870px; 
+					   height:30px; 
+					   background-color:#CCCCCC;
+					   background:url(images/prod_details_line_bgr.jpg) repeat-x bottom;
+					   }
+					   
+.learn_more_container .white_separator {width:20px; 
+					   					height:30px;
+										float:right;
+										background-color:#ffffff;
+										}					   
+					   
+
+.learn_more  {width:255px;
+			  height:25px; 
+			  padding:5px 0 0 10px;
+			  float:right;
+			  -webkit-border-radius:5px;
+			  -moz-border-radius:5px;
+			  border-radius:5px;
+			  background:url(images/prod_detail_learn_more_bgr.jpg) no-repeat right center #ff992c;
+			  font-family: Arial, Helvetica, sans-serif;
+		 	  font-size:13px;
+			  color:#ffffff;
+			  outline:none;
+			  }
+			  
+.learn_more  a {width:255px;
+			  height:25px;
+			  padding:5px 0 0 10px;
+			  float:right;
+			  -webkit-border-radius:5px;
+			  -moz-border-radius:5px;
+			  border-radius:5px;
+			  background:url(images/prod_detail_learn_more_bgr.jpg) no-repeat right center #ff992c;
+			  font-family: Arial, Helvetica, sans-serif;
+		 	  font-size:13px;
+			  color:#ffffff;
+              text-decoration: none;
+			  }
+
+				
+.prod_details_top_container .right_column {float:right; 
+											width:293px
+										   }
+										   
+.right_column .show_case_top {width:273px; 
+							height:32px;
+							background:url(images/show_case_top.jpg) no-repeat 0 0 #2e2e2e;
+							padding:10px 0 0 20px;
+							font-family:Lato,Helvetica, sans-serif;
+			   		 	    font-size:20px;
+			                color:#fefefe; /*#ff992c;*/
+							}
+							
+							
+.right_column .show_case_center_content {width:293px;
+										 min-height:228px;
+										/* padding:10px 0 0 0;*/
+										 background-color:#ebebeb;
+										 }
+										 
+.show_case_center_content .show_case_screen {width:100px;
+                                             height:100px;
+								
+								margin:3px 0 0 15px;
+								float:left;
+								border:1px solid #d0d0d0;
+								
+										 }
+.show_case_center_content .show_case_content {float:left;
+								width:150px;
+									padding: 3px 0 0 15px;
+									}
+										 
+.right_column .show_case_bottom {width:293px;
+								height:10px;
+								background:url(images/show_case_bottom.jpg) no-repeat 0 0 #ffffff;
+								}
+
+
+.prod_details_content_area .prod_details_bottom_container {
+														margin-top:10px;}
+														
+														
+.prod_details_bottom_container .left_column_2 {width:590px;
+								                height:138px;
+												float:left;
+												
+												}
+												
+.left_column_2 h2 {font-family: Arial, Helvetica, sans-serif;
+			   		font-size:17px;
+					font-weight:bold;
+					color:#666666;
+					}
+												
+.left_column_2 .client_photo {width:100px;
+								height:107px;
+								margin:10px 0 0 0;
+								float:left;
+								border:1px solid #d0d0d0;
+								background:url(images/client_photo.jpg) no-repeat ;
+								}
+								
+.left_column_2 .client_testimonial {float:left;
+									width:452px;
+									padding: 0 0 0 15px;
+									}
+
+				.client_testimonial p {font-family: Arial, Helvetica, sans-serif;
+			   							font-size:12px;
+										text-align:left;
+										margin-top:6px; 
+										margin-bottom:3px;
+										}
+										
+				.client_testimonial p span {color:#FF6A1B; font-weight:bold;}		
+												
+				
+												
+.prod_details_bottom_container .right_column_2 {width:610px;
+												height:138px;
+												float:right;
+												}
+												
+							.right_column_2 ul {list-style: none;
+    											margin: 0;
+    											padding: 0;
+												}
+												
+							.right_column_2 li {float: left;
+											    padding: 0 6px 0 6px;}
+
+.ul.bjqs-controls li a {
+    color: #fefefe !important;
+}
